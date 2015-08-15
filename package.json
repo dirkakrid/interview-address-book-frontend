@@ -1,0 +1,32 @@
+{
+  "name": "interview-address-book-frontend",
+  "version": "0.0.1",
+  "description": "Exercise for front end interviews",
+  "main": "index.html",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "connect": "^3.4.0",
+    "query": "^0.2.0",
+    "restify": "^3.0.3",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "proxy-middleware": "^0.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daptiv/interview-address-book-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daptiv/interview-address-book-frontend/issues"
+  },
+  "homepage": "https://github.com/daptiv/interview-address-book-frontend#readme"
+}
