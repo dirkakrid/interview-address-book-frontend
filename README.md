@@ -7,7 +7,7 @@ The goal of this exercise is to implement functionality for an address book. It 
 - Implement "add a contact" to address book functionality
 - You don't need to implement the storage layer
 - You don't need to implement the internals of the API layer. However you will need write your "fake" api. See fake api section. Your webpages should call to your fake API to get results. For add, you should call your fake api to send data but the data does not need to be persisted.  
-- You can use these mock ups [TODO: provide mockups] that you can use a guide but by feel free to use your creative license to showcase the information as you wish. However in general focus more on functionality and less on styles.
+- You can use this ![mock](https://github.com/daptiv/interview-address-book-frontend/blob/master/mock.png) as a guide but feel free to use your creative license. However in general focus more on functionality and less on styles.
 - Approach this in test driven development fashion
 - Use any frameworks/tools/technologies you wish to use
 
@@ -18,7 +18,7 @@ This exercise has dependencies on Node.js (for running the mock api) and grunt.
 Node.js - You can download a Node.js installer for your operating system from http://nodejs.org/download/.
 
 Once you have the prerequisties
-- Fork the repo
+- Fork this repo
 - run
 ```
 npm install
