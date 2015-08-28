@@ -1,26 +1,26 @@
 # Address Book Coding Exercise
 
 ## Goals and Expectations
-The goal of this exercise is to create a website for an address book. You have 2 hours to do this exercise and therefore you will only need to subset of the functionallity. Here is what we expect:
+The goal of this exercise is to implement functionality for an address book. It should take about an hour or so. Here is what we expect:
 
 - Implement a page that displays the list of contacts available
-- Implement "edit a contact" to address book functionality
+- Implement "add a contact" to address book functionality
 - You don't need to implement the storage layer
-- You don't need to implement the internals of the API layer. However you will need write your "fake" api. See fake api section. Your webpages should call to your fake API to get results. For edit, you should call your fake api to send data but the data does not need to be persisted.  
-- You can use these mock ups [TODO: provide mockups] that you can use a guide but by feel free to use your creative license to showcase the information as you wish. 
-- Approach this in test driven development fashion 
+- You don't need to implement the internals of the API layer. However you will need write your "fake" api. See fake api section. Your webpages should call to your fake API to get results. For add, you should call your fake api to send data but the data does not need to be persisted.  
+- You can use these mock ups [TODO: provide mockups] that you can use a guide but by feel free to use your creative license to showcase the information as you wish. However in general focus more on functionality and less on styles.
+- Approach this in test driven development fashion
 - Use any frameworks/tools/technologies you wish to use
 
 ## Instructions
-This exercise has dependencies on Node.js (for running the mock api) and grunt. 
+This exercise has dependencies on Node.js (for running the mock api) and grunt.
 
 ### Prerequisites
 Node.js - You can download a Node.js installer for your operating system from http://nodejs.org/download/.
 
 Once you have the prerequisties
 - Fork the repo
-- run 
-``` 
+- run
+```
 npm install
 ```
 - if you don't already have grunt installed globally
@@ -45,4 +45,3 @@ function respond(req, res, next) {
 }
 ```
 You can follow the same pattern to add more Apis. When grunt runs it proxies all calls to api (http://localhost:8888/api) to restify. So for the above example, to hit the contacts api you would hit, http://localhost:8888/api/contacts
-TODO: provide a JSON file with contacts

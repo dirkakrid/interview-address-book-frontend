@@ -1,13 +1,8 @@
 var restify = require('restify');
 var connect = require('connect');
+var contacts = require('./contacts');
 
 function respond(req, res, next) {
-    var contacts = [
-        {
-            name: 'Amy Mitchell'
-        }
-    ];
-
     res.send(contacts);
 }
 

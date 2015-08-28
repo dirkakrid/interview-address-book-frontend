@@ -1,8 +1,22 @@
 module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
 
     grunt.initConfig({
+        concat: {
+            scripts: {
+                files: {
+                    'client/app.js': ['client/js/**/*.js'],
+                },
+            },
+            styles: {
+                files: {
+                    'client/app.css' : ['client/styles/**/*.css']
+                }
+            }
+        },
+
        connect: {
            server: {
                options: {
@@ -35,12 +49,12 @@ module.exports = function(grunt) {
                 livereload: true
             },
             dist: {
-                files: ['client/**/*'],
-                tasks: []
+                files: ['client/js/**/*.js', 'client/styles/**/*.css', 'client/**/*.html'],
+                tasks: ['concat:styles', 'concat:scripts']
             },
         }
    });
 
 
-   grunt.registerTask('default', ['connect', 'watch:dist']);
+   grunt.registerTask('default', ['concat','connect', 'watch:dist']);
 };
