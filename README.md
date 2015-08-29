@@ -1,7 +1,9 @@
 # Address Book Coding Exercise
 
 ## Goals and Expectations
-The goal of this exercise is to implement functionality for an address book. It should take about an hour or so. Here is what we expect:
+The goal of this exercise is to implement functionality for an address book. It should take about an hour or so. Please do not share your solution publicly.  
+
+Here is what we expect:
 
 - Implement a page that displays the list of contacts available
 - Implement "add a contact" to address book functionality
