@@ -8,7 +8,7 @@ Here is what we expect:
 - Implement a page that displays the list of contacts available
 - Implement "add a contact" to address book functionality
 - You don't need to implement the storage layer
-- You don't need to implement the internals of the API layer. However you will need write your "fake" api. See fake api section. Your webpages should call to your fake API to get results. For add, you should call your fake api to send data but the data does not need to be persisted.  
+- You don't need to implement the internals of the API layer. However you will need write your "fake" api. See fake api section. Your webpages should call to your fake API to get results. For add, you should call your fake api to send data but the data does not need to be persisted.  You MUST use some form of API to get results (that is local storage is not ok). 
 - You can use this ![mock](https://github.com/daptiv/interview-address-book-frontend/blob/master/mock.png) as a guide but feel free to use your creative license. However in general focus more on functionality and less on styles.
 - Approach this in test driven development fashion
 - Use any frameworks/tools/technologies you wish to use
@@ -36,6 +36,11 @@ grunt
 - go to your browser and hit http://localhost:8888
 - Do your work
 - Submit a pull request
+
+### Understanding build and watch
+For building we are using grunt. grunt concats all files within the scripts into one single file called app.js. It also compiles all styles into a single file called app.css. 
+
+The watch only works for client side. If you make any server side changes, you need to stop and rerun grunt. 
 
 ## Fake API
 This project is wired up with [restify](http://mcavage.me/node-restify/). There is an example of fake api in server/api.js.
